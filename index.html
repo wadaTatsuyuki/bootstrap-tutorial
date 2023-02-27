@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオサイト</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="d-flex align-items-center justify-content-between w-100">
+            <div class="logo">
+                WADA Tatsuyuki
+            </div>
+
+            <div>
+                <img src="./images/book-close.png" class="book-close-btn">
+                <img src="./images/book-open.png" class="book-open-btn">
+            </div>
+
+            <div class="menu-bar">
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="web-developer.html">Biography</a></li>
+                    <li><a href="web-developer.html">Web Developer</a></li>
+                    <li><a href="web-developer.html">Photographer</a></li>
+                    <li><a href="web-developer.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- top -->
+        <section class="top vh-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="title col-md-8">
+                        <h1>空に向かって</h1>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- pagelink -->
+        <section class="pagelink bg-light">
+            <div class="container text-dark">
+                <div class="row">
+                    <div class="col-sm-7 mx-auto text-center">
+                        <h2>和田 竜征について</h2>
+
+                    </div>
+                </div>
+
+                <div class="row g-4 mt-3">
+                    <div class="col-sm-4">
+                        <div class="card card-effect text-center">
+                            <img src="./images/biography.jpg" alt="biography">
+                            <div class="my-4 px-1">
+                                <h5>Biography</h5>
+                            </div>
+                            <button class="btn btn-primary mb-3 py-2 px-3">View detail</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card card-effect text-center">
+                            <img src="./images/biography.jpg" alt="biography">
+                            <div class="my-4 px-1">
+                                <h5>Web developer</h5>
+                            </div>
+                            <button href="web-developer.html" class="btn btn-primary mb-3 py-2 px-3">View
+                                detail</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card card-effect text-center">
+                            <img src="./images/photographer.jpg" alt="biography">
+                            <div class="my-4 px-1">
+                                <h5>Photographer</h5>
+                            </div>
+                            <button class="btn btn-primary mb-3 py-2 px-3">View detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- second -->
+        <section class="second vh-100 d-flex align-items-center" id="second">
+            <div class="container">
+                <div class="row">
+                    <div class="title col-md-8">
+                        <h2>狐の嫁入り</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- learned -->
+        <section class="learned bg-light mx-auto" id="hardware">
+            <div class="container text-dark">
+                <div class="row">
+                    <div class="col-sm-7 mx-auto text-center">
+                        <h2>学んだ技術</h2>
+                    </div>
+                </div>
+
+                <div class="row g-5 mt-3">
+                    <div class="col-sm-6">
+                        <div class="learned-card card-effect text-center">
+                            <img src="./images/html.png" />
+                            <div class="overlay"></div>
+                            <h3>HTML</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="learned-card card-effect text-center">
+                            <img src="./images/css.png" />
+                            <div class="overlay"></div>
+                            <h3>CSS</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="learned-card card-effect text-center">
+                            <img src="./images/js.png" />
+                            <div class="overlay"></div>
+                            <h3>JavaScript</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="learned-card card-effect text-center">
+                            <img src="./images/php.png" />
+                            <div class="overlay"></div>
+                            <h3>PHP</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact vh-100 d-flex align-items-center" id="contact">
+            <div class="container py-5 px-0">
+                <div class="row">
+                    <div class="contact-info col-lg-6">
+                        <h2 class="mb-5">お問い合わせ</h2>
+
+                        <form action="" class="pt-3 px-5">
+                            <div class="flex">
+                                <input type="text" class="form-control" placeholder="Full Name" id="full-name">
+                            </div>
+
+                            <div class="flex">
+                                <input type="email" class="form-control" placeholder="Email" id="mail">
+                            </div>
+
+                            <div class="flex">
+                                <input type="tel" class="form-control" placeholder="TEL" id="tel">
+                            </div>
+
+                            <div class="flex">
+                                <textarea name="" id="" cols="80" rows="10" placeholder="Message"
+                                    id="massage"></textarea>
+                            </div>
+                            <br>
+                            <button class="btn btn-primary mt-3 px-5 fs-4">送信</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/mail.js"></script>
+</body>
+
+</html>

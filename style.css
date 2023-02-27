@@ -1,0 +1,371 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2)
+}
+
+* {
+    transition: all 0.4s ease;
+
+}
+
+.wrap {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Zen Kurenaido', sans-serif;
+    color: white;
+
+}
+
+html {
+    font-size: 62.5%;
+    /*デフォルトのフォントサイズを10pxにする*/
+
+}
+
+h2 {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 1;
+}
+
+header {
+    /*2.7remは上記で設定したフォントサイズ10pxの2.7倍という意味*/
+    padding: 2.7rem 5.4rem;
+    text-shadow: black 1px 3px 6px;
+    z-index: 10;
+    position: fixed;
+}
+
+header .menu-bar {
+    position: absolute;
+    top: 30vh;
+    right: -200px;
+    background: #000;
+    width: 170px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    opacity: 0;
+}
+
+header .menu-bar li {
+    margin-bottom: 3rem;
+
+}
+
+header .menu-bar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+header .menu-bar.active {
+    right: -20px;
+    opacity: 1;
+}
+
+header .menu-bar li a:hover {
+    color: aqua;
+}
+
+header .book-open-btn {
+    display: none;
+}
+
+header .book-open-btn.active {
+    display: block;
+}
+
+header .book-close-btn.active {
+    display: none;
+}
+
+header .book-close-btn {
+    display: block;
+}
+
+
+
+.logo {
+    cursor: pointer;
+}
+
+header img {
+    width: 3.5rem;
+    cursor: pointer;
+}
+
+.top {
+    background-image: url(./images/top.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.top .title {
+    transform: translateY(270px);
+}
+
+.top h1 {
+    text-shadow: black 1px 3px 6px;
+    font-size: 2rem;
+}
+
+/*pagelink section*/
+
+.pagelink h2 {
+    font-size: 4rem;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.pagelink image {
+    width: 100%;
+}
+
+.card-effect {
+    box-shadow: var(--box-shadow);
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+}
+
+.card h5 {
+    font-size: 2rem;
+}
+
+/*second*/
+
+.second {
+    background-image: url(./images/second.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.second .title {
+    transform: translateY(270px);
+}
+
+/*learned*/
+
+.learned-card img {
+    width: 50%;
+    height: 50%;
+
+}
+
+.learned-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.learned-card h3 {
+    position: absolute;
+    color: azure;
+    font-size: 4rem;
+    opacity: 0;
+}
+
+.learned-card .overlay {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.learned-card:hover .overlay {
+    background-color: rgb(13, 71, 92);
+    opacity: 0.3;
+
+}
+
+.learned-card:hover img {
+    transform: scale(1.5);
+}
+
+.learned-card:hover h3 {
+    opacity: 1;
+}
+
+/* contact */
+
+.contact {
+    background-image: url(./images/contact.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contact input {
+    height: 4rem;
+    margin-bottom: 2rem;
+
+}
+
+.contact textarea {
+    width: 70%;
+
+}
+
+form img {
+    height: 40px;
+}
+
+.flex{
+    display: flex;
+}
+
+@keyframes moveToEmail {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateY(60px);
+    }
+  }
+  
+
+/* web developerページ */
+
+.snow-container {
+    background-image: url(./images/snow.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.snow-container h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 10rem;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 100px;
+    text-shadow:
+        3px 3px 3px #000, -3px -3px 3px #000,
+        -3px 3px 3px #000, 3px -3px 3px #000;
+}
+
+.snow-container h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: bold;
+    text-shadow:
+        3px 3px 3px #000, -3px -3px 3px #000,
+        -3px 3px 3px #000, 3px -3px 3px #000;
+}
+
+
+.snow {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    animation: snowFall 10s linear;
+}
+
+.snow-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.comingsoon {
+    z-index: 10;
+}
+
+@keyframes snowFall {
+    0% {
+        opacity: 0;
+        top: 0;
+        transform: translateX(5px);
+
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateX(-5px);
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        top: 100vh;
+    }
+}
+
+/*メディアクエリ*/
+
+@media (max-width: 1000px) {
+    .top h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .top .title {
+        transform: translateY(240px);
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 45%;
+    }
+
+
+    .top h3,
+    .second h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .contact h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+}
